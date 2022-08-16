@@ -1,12 +1,12 @@
 /* groovylint-disable-next-line CompileStatic */
 pipeline {
     agent any
-    tools { nodejs 'NodeJs' }
+    tools { nodejs 'Node16.15.0' }
     stages {
         stage('Test npm') {
             steps {
                 sh '''
-          npm --version
+              npm --version
         '''
             }
         }
