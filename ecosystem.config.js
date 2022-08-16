@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      script: './src/app.js',
+      script: 'app.js',
       watch: ['src']
     }]
 };
