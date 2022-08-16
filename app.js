@@ -9,7 +9,7 @@ const port = 5000
 app.use(cors())
 
 app.get('/api', (req, res) => {
-    res.status(200).send({ status: "OK", message: "API is running successfully change" })
+    res.status(200).send({ status: "OK", message: "API is running successfully changes" })
 })
 
 app.listen(port, () => {
