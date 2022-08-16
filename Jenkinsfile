@@ -24,8 +24,13 @@ pipeline {
             steps {
                 // sh 'sudo -S  rm -rf /var/jenkins_fullstack_demo/'
                 // sh "cd  ${WORKSPACE} && mkdir build"
-                sh "cd ${WORKSPACE}/dist && ls"
-                sh "sudo -S cp -r ${WORKSPACE}/dist/ /var/www/jenkins_fullstack_demo/"
+
+                sh ''' 
+                   cd ${WORKSPACE}/dist && ls
+                   cp * /var/www/jenkins_fullstack_demo/
+                ''' 
+                // sh "cd ${WORKSPACE}/dist && ls"
+                // sh "cp * /var/www/jenkins_fullstack_demo/"
                 // sh 'pm2 delete 0'
                 // sh 'cd /var/www && mkdir jmismail'
             // sh 'cd /var/www/jenkins-react-app/ && ls'
