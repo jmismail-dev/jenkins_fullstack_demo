@@ -26,7 +26,7 @@ pipeline {
                 // sh "cd  ${WORKSPACE} && mkdir build"
 
                 sh ''' 
-                   cd ${WORKSPACE}/client/dist && ls
+                   cd ${WORKSPACE}/client/dist
                    sudo cp -r * /var/www/jenkins_fullstack_demo/
                 ''' 
                 // sh "cd ${WORKSPACE}/dist && ls"
