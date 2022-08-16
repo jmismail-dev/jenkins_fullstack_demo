@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      script: 'app.js',
-      watch: '*',
+      script: './src/app.js',
+      watch: ['src'],
       ignore_watch: ["node_modules", "client"]
     }]
 };
