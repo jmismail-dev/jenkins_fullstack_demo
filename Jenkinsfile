@@ -30,7 +30,7 @@ pipeline {
                    cd ${WORKSPACE}/client/dist
                    sudo cp -r * /var/www/jenkins_fullstack_demo/
                    cd ${WORKSPACE}/
-                   sudo cp -r package.json node_modules app.js ecosystem.config.js /home/jmismail/jenkins_fullstack_demo
+                   sudo cp -r package.json node_modules src/app.js ecosystem.config.js /home/jmismail/jenkins_fullstack_demo
                 ''' 
                 // sh "cd ${WORKSPACE}/dist && ls"
                 // sh "cp * /var/www/jenkins_fullstack_demo/"
