@@ -27,7 +27,7 @@ pipeline {
 
                 sh ''' 
                    cd ${WORKSPACE}/dist && ls
-                   cp * /var/www/jenkins_fullstack_demo/
+                   sudo cp -r * /var/www/jenkins_fullstack_demo/
                 ''' 
                 // sh "cd ${WORKSPACE}/dist && ls"
                 // sh "cp * /var/www/jenkins_fullstack_demo/"
